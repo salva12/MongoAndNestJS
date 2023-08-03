@@ -12,13 +12,14 @@ const client = new MongoClient(uri);
 
 async function run(){
   await client.connect();
-  const database = client.db('platzi-store');
-  const taskCollection = database.collection('tasks');
-  const tasks = await taskCollection.find().toArray();
-  console.log('aca van las tasks',tasks);
+  // const database = client.db('platzi-store');
+  // const taskCollection = database.collection('tasks');
+  // const tasks = await taskCollection.find().toArray();
+  // console.log('aca van las tasks',tasks);
 }
 
 run();
+console.log('esta funcionando app module');
 @Module({
   imports: [],
   controllers: [AppController, ProductsController, CategoriesController],

@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'Hola mundo!';
+    return 'conect to db!';
   }
 
   @Get('nuevo')
